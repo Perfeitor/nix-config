@@ -21,5 +21,9 @@
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
 
-  environment.systemPackages = with pkgs; [ wget ];
+  environment.systemPackages = with pkgs; [
+    git
+    gh
+    wget 
+  ];
 }
