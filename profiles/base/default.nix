@@ -21,8 +21,6 @@
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
 
-  programs.gnupg.agent.enable = true;
-
   environment.systemPackages = with pkgs; [
     git
     gh
@@ -30,4 +28,32 @@
     pinentry-curses
     wget 
   ];
+
+  programs.gnupg.agent.enable = true;
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;          # tab-completion
+    histSize = 10000;
+    setOptions = [
+      "HIST_IGNORE_DUPS"
+      "SHARE_HISTORY"
+      "HIST_IGNORE_SPACE"
+      "AUTO_CD"
+    ];
+    shellAliases = {
+      ll = "ls -la";
+      gs = "git status";
+    };
+
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [ "git" "z" "sudo" "fzf" "zsh-autosuggestions" "zsh-syntax-highlighting" ];
+    };
+  };
+
+  programs.fzf.enable = true;
+
+  users.defaultUserShell = pkgs.zsh;
 }
