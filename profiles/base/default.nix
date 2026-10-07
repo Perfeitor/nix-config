@@ -23,9 +23,9 @@
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryFlavor = "curses";
+    pinentryPackage = "curses";
   };
-  
+
   environment.systemPackages = with pkgs; [
     git
     gh
