@@ -53,7 +53,10 @@
     };
   };
 
-  programs.fzf.enable = true;
+  programs.fzf = {
+    keybindings = true;       # Ctrl-T, Ctrl-R, Alt-C
+    fuzzyCompletion = true;   # fuzzy completion (tùy chọn)
+  };
 
   users.defaultUserShell = pkgs.zsh;
 }
