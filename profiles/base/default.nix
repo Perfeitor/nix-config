@@ -25,6 +25,7 @@
     git
     gh
     gnupg
+    pinentry-curses
     wget 
   ];
 }
