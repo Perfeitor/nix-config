@@ -3,8 +3,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../profiles/base
-    ../../profiles/development
+    ../../../profiles/base
+    ../../../profiles/development
   ];
 
   networking.hostName = "ark-vm";
