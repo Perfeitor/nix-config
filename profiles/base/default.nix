@@ -21,10 +21,7 @@
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
 
-  programs.gnupg.agent = {
-    enable = true;
-    pinentryPackage = "curses";
-  };
+  programs.gnupg.agent.enable = true;
 
   environment.systemPackages = with pkgs; [
     git
