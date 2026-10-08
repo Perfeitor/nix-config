@@ -56,7 +56,41 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "nvim-config": "nvim-config"
+        "nvim-config": "nvim-config",
+        "tmux-config": "tmux-config",
+        "tpm": "tpm"
+      }
+    },
+    "tmux-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791427819,
+        "narHash": "sha256-LgBvmKw8ESV0oo2ZA2XAN2BffJzZz0NyXmS5JVxbxCg=",
+        "owner": "Perfeitor",
+        "repo": "tmux-config",
+        "rev": "2e0683e731e77749f3c9bb840d36b64ec593c6fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Perfeitor",
+        "repo": "tmux-config",
+        "type": "github"
+      }
+    },
+    "tpm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779036064,
+        "narHash": "sha256-oRKUZNyJYQXlkeQfbEYiltUEBpvdwn2SoEBWHVUNmrA=",
+        "owner": "tmux-plugins",
+        "repo": "tpm",
+        "rev": "e261deb1b47614eed3400089ce7197dc68acc4eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tmux-plugins",
+        "repo": "tpm",
+        "type": "github"
       }
     }
   },
