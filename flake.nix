@@ -8,7 +8,7 @@
     };
 
     nvim-config = {
-      url = "github:Perfeitor/nvim-config";
+      url = "github:Perfeitor/nvim-config/release/nix";
       flake = false;
     };
 
