@@ -28,7 +28,8 @@
     gh
     gnupg
     pinentry-curses
-    wget 
+    wget
+    lazygit
   ];
 
   programs.gnupg.agent.enable = true;
