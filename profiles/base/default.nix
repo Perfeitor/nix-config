@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, nvim-config, ... }:
 
 {
   time.timeZone = "Asia/Ho_Chi_Minh";
@@ -72,6 +72,7 @@
   };
 
   users.defaultUserShell = pkgs.zsh;
-  
+ 
+  home-manager.extraSpecialArgs = { inherit nvim-config; };
   home-manager.users.perfeitor = import ../../home/perfeitor;
 }

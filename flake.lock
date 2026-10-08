@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791306979,
+        "narHash": "sha256-KuLePuhwJM9NLt/gTLHzXaOoSZKGoB3m7NfXjiQ98HY=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "fae6e9e42c3b762ab47635cddcfaf6f52374a61b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1791260994,
@@ -16,9 +36,27 @@
         "type": "github"
       }
     },
+    "nvim-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791251190,
+        "narHash": "sha256-fZY7QhP1VbuZXWjYJCu7M97MOokMYNqgTNSNhXpE8EA=",
+        "owner": "Perfeitor",
+        "repo": "nvim-config",
+        "rev": "b10412830714594ada583738adaffe4747c6c894",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Perfeitor",
+        "repo": "nvim-config",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs",
+        "nvim-config": "nvim-config"
       }
     }
   },
