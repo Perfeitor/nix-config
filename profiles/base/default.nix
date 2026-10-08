@@ -1,4 +1,4 @@
-{ pkgs, nvim-config, ... }:
+{ pkgs, nvim-config, tmux-config, tpm, ... }:
 
 {
   time.timeZone = "Asia/Ho_Chi_Minh";
@@ -73,6 +73,8 @@
 
   users.defaultUserShell = pkgs.zsh;
  
-  home-manager.extraSpecialArgs = { inherit nvim-config; };
+  home-manager.extraSpecialArgs = { inherit nvim-config tmux-config tpm; };
   home-manager.users.perfeitor = import ../../home/perfeitor;
+
+  fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 }
