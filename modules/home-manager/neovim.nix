@@ -2,11 +2,13 @@
 
 {
   home.packages = with pkgs; [
-    neovim
+    neovim tree-sitter
     gcc gnumake
     cargo rustc
     git ripgrep fd unzip nodejs python3
     wl-clipboard xclip
+    nixd
+    nixfmt
   ];
 
   xdg.configFile."nvim/init.lua".source = "${nvim-config}/init.lua";
