@@ -35,7 +35,7 @@
 
   programs.zsh = {
     enable = true;
-    enableCompletion = true;          # tab-completion
+    enableCompletion = true;
     histSize = 10000;
     setOptions = [
       "HIST_IGNORE_DUPS"
@@ -67,9 +67,11 @@
   };
 
   programs.fzf = {
-    keybindings = true;       # Ctrl-T, Ctrl-R, Alt-C
-    fuzzyCompletion = true;   # fuzzy completion (tùy chọn)
+    keybindings = true;
+    fuzzyCompletion = true;
   };
 
   users.defaultUserShell = pkgs.zsh;
+  
+  home-manager.users.perfeitor = import ../../home/perfeitor;
 }
