@@ -4,6 +4,7 @@
   imports = [ 
     ../../modules/home-manager/neovim.nix
     ../../modules/home-manager/tmux.nix
+    ../../modules/home-manager/btop.nix
   ];
 
   home.username = "perfeitor";
